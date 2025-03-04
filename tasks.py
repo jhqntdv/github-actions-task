@@ -17,7 +17,7 @@ def lottery(date):
     logger.info(f"The lottery numbers for {date} are: {x[:-1]} and the bonus number is: {x[-1]}")
     return x 
 
-def get_pools():
+def get_pools(API_KEY):
     conn = http.client.HTTPSConnection("cardano-mainnet.blockfrost.io")
     headers = { 'Project_id': API_KEY }
     
@@ -45,4 +45,4 @@ if __name__ == "__main__":
     
     lottery(today)
 
-    get_pools()
+    get_pools(API_KEY)
