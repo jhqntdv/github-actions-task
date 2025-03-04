@@ -4,3 +4,6 @@
 2025-03-04 04:15:09,965 - ERROR - API_KEY not found in environment variables
 2025-03-04 04:15:09,965 - INFO - The lottery numbers for 2025-03-04 are: [17, 35, 5, 12, 8] and the bonus number is: 10
 2025-03-04 04:15:10,205 - ERROR - Failed to retrieve pools: 403 - {"error":"Forbidden","message":"Invalid project token.","status_code":403}
+2025-03-04 23:31:46,589 - ERROR - API_KEY not found in environment variables
+2025-03-04 23:31:46,589 - INFO - The lottery numbers for 2025-03-04 are: [42, 7, 4, 46, 23] and the bonus number is: 19
+2025-03-04 23:31:46,866 - ERROR - Failed to retrieve pools: 403 - {"error":"Forbidden","message":"Invalid project token.","status_code":403}
