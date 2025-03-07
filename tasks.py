@@ -4,6 +4,7 @@ import pandas as pd
 import logging
 import os
 import random
+import json
 
 # from dotenv import load_dotenv
 # load_dotenv()
@@ -12,7 +13,6 @@ logging.basicConfig(level=logging.INFO, filename='status.log', filemode='a', for
 logger = logging.getLogger(__name__)
 
 def lottery(date):
-    # pick 5+1 numbers between 1 and 49
     x = random.sample(range(1, 50), 6)
     logger.info(f"The lottery numbers for {date} are: {x[:-1]} and the bonus number is: {x[-1]}")
     return x 
@@ -33,6 +33,25 @@ def get_pools(API_KEY):
         logger.error(f"Failed to retrieve pools: {res.status} - {data.decode('utf-8')}")
         return None
 
+def get_total_rewards(API_KEY, stake_address, count=100, page=1):
+    conn = http.client.HTTPSConnection("cardano-mainnet.blockfrost.io")
+    headers = { 'Project_id': API_KEY }
+    
+    endpoint = f"/api/v0/accounts/{stake_address}/rewards?count={count}&page={page}"
+    conn.request("GET", endpoint, headers=headers)
+    res = conn.getresponse()
+    data = res.read()
+    
+    if res.status == 200:
+        rewards = json.loads(data.decode("utf-8"))
+        total_rewards = sum(int(reward["amount"]) for reward in rewards) / 1_000_000
+        logger.info(f"Successfully retrieved total rewards: {total_rewards} ADA")
+        return total_rewards
+
+    else:
+        logger.error(f"Failed to retrieve rewards: {res.status} - {data.decode('utf-8')}")
+        return None
+
 if __name__ == "__main__":
 
     try:
@@ -46,3 +65,5 @@ if __name__ == "__main__":
     lottery(today)
 
     get_pools(API_KEY)
+
+    get_total_rewards(API_KEY, "stake1uxqt2hr9nytznnyk8ku3ajemzv88mxx8ag2udmp2r83t4egzakat3", 100, 1)
