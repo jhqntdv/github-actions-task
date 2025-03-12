@@ -27,7 +27,7 @@ handler2.setFormatter(formatter2)
 logger2.addHandler(handler2)
 
 def lottery(date):
-    x = random.sample(range(1, 50), 6)
+    x = random.sample(range(1, 50), 5)
     logger1.info(f"The lottery numbers for {date} are: {x[:-1]} and the bonus number is: {x[-1]}")
     return x 
 
@@ -117,6 +117,7 @@ def get_crypto_listings(api_key, start=1, limit=100, price_min=None, price_max=N
     if response.status_code == 200:
         data = response.json()
         signal_track_supply_by_tags(data, 'world-liberty-financial-portfolio') # change the tag here
+        signal_track_supply_by_tags(data, 'real-world-assets') # change the tag here
         logger1.info(f"Successfully retrieved crypto listings.")
         return data
     else:
