@@ -6,6 +6,7 @@ import os
 import random
 import json
 import datetime
+from datetime import timedelta
 
 # from dotenv import load_dotenv
 # load_dotenv()
@@ -26,6 +27,38 @@ formatter2 = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 handler2.setFormatter(formatter2)
 logger2.addHandler(handler2)
 
+class Client:
+    API_URL = "https://api.finnhub.io/api/v1"
+    DEFAULT_TIMEOUT = 10
+
+    def __init__(self, api_key, proxies=None):
+        self._session = self._init_session(api_key, proxies)
+
+    @staticmethod
+    def _init_session(api_key, proxies):
+        session = requests.session()
+        session.headers.update({"Accept": "application/json",
+                                "User-Agent": "finnhub/python"})
+        session.params = {"token": api_key}
+        if proxies is not None:
+            session.proxies.update(proxies)
+        return session
+
+    def _request(self, method, endpoint, params=None):
+        url = f"{self.API_URL}/{endpoint}"
+        response = self._session.request(method, url, params=params, timeout=self.DEFAULT_TIMEOUT)
+        if response.status_code == 200:
+            return response.json()
+        else:
+            response.raise_for_status()
+
+    def get_upcoming_ipo(self, start_date, end_date):
+        params = {
+            'from': start_date,
+            'to': end_date
+        }
+        return self._request('GET', 'calendar/ipo', params=params)
+    
 def lottery(date):
     x = random.sample(range(1, 50), 5)
     logger1.info(f"The lottery numbers for {date} are: {x[:-1]} and the bonus number is: {x[-1]}")
@@ -127,11 +160,14 @@ def get_crypto_listings(api_key, start=1, limit=100, price_min=None, price_max=N
 def signal(data):
     mp = {}
     counter = len(data['data'])
+    index_avg = 0
     for item in data['data']:
         if item['value_classification'] in mp:
             mp[item['value_classification']] += 1 / counter
         else:
             mp[item['value_classification']] = 1 / counter
+        
+        index_avg += item['value'] / counter
     
     fear = mp.get('Fear', 0)
     extreme_fear = mp.get('Extreme Fear', 0)
@@ -139,17 +175,17 @@ def signal(data):
     extreme_greed = mp.get('Extreme Greed', 0)
 
     if fear + extreme_fear > 0.5:
-        logger2.info(f"For the last {counter} days, the market sentiment seems Fear")
+        logger2.info(f"The average of FGI for the last {counter} days is {index_avg}, the market sentiment seems Fear")
         if extreme_fear > 0.5:
             logger2.info(f"Consider buy in")
             return "Buy"
     elif greed + extreme_greed > 0.5:
-        logger2.info(f"For the last {counter} days, the market sentiment seems Greed")
+        logger2.info(f"The average of FGI for the last {counter} days is {index_avg}, the market sentiment seems Greed")
         if extreme_greed > 0.5:
             logger2.info(f"Consider sell out")
             return "Sell"
     else:
-        logger2.info(f"For the last {counter} days, the market sentiment seems Neutral")
+        logger2.info(f"The average of FGI for the last {counter} days is {index_avg}, the market sentiment seems Neutral")
         return "Hold"
 
 def signal_track_supply_by_tags(data, tag):
@@ -175,6 +211,23 @@ def signal_track_supply_by_tags(data, tag):
     logger2.info(f"{tag} includes: {symbol}")
     logger2.info(f"Tags: {tag}, Total Circulating Supply (billions): {total_circulating_supply:.2f}, Total Total Supply (billions): {total_total_supply:.2f}, Total Market Cap (billions): {total_market_cap:.2f}")
 
+def signal_ipo(data):
+    count_withdrawn = 0
+    count_priced = 0
+    count_filed = 0
+    for item in data['ipoCalendar']:
+        if item.get('status', '') == 'priced':
+            count_priced += 1
+            count_filed += 1
+        elif item.get('status', '') == 'filed':
+            count_filed += 1
+        elif item.get('status', '') == 'withdrawn':
+            count_withdrawn += 1
+        # print(f"{item.get('date', '')} - {item.get('name', '')} - {item.get('symbol', '')} - {item.get('status', '')} - {item.get('price', '')}")
+    result = f"In the last 7 days, {count_priced} / {count_filed} IPOs have been priced, {count_withdrawn} have been withdrawn."
+    logger2.info(result)
+
+    return result
 
 if __name__ == "__main__":
 
@@ -190,6 +243,13 @@ if __name__ == "__main__":
         CMC_API_KEY = ""
         logger1.error("CMC_API_KEY not found in env.")
 
+    try:
+        FINNHUB_API_KEY = os.environ["FINNHUB_API_KEY"]
+    except KeyError:
+        FINNHUB_API_KEY = ""
+        logger1.error("FINNHUB_API_KEY not found in env.")
+
+
     today = pd.Timestamp.today().tz_localize('UTC').strftime('%Y-%m-%d')
     data = lottery(today)
 
@@ -199,3 +259,10 @@ if __name__ == "__main__":
     if CMC_API_KEY:
         data =  get_crypto_listings(CMC_API_KEY, start=1, limit=5000, sort='volume_30d', price_min=0.0001, market_cap_min=1_000_000_000 ,sort_dir='desc')
         data = get_fear_and_greed_historical(CMC_API_KEY, start=1, limit=90)
+
+    if FINNHUB_API_KEY:
+        client = Client(FINNHUB_API_KEY)
+        start_date = (pd.Timestamp.today().tz_localize('UTC') - timedelta(days=7)).strftime('%Y-%m-%d')
+        data = client.get_upcoming_ipo(start_date, today)
+        if data:
+            signal_ipo(data)
