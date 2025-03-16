@@ -8,9 +8,6 @@ import json
 import datetime
 from datetime import timedelta
 
-# from dotenv import load_dotenv
-# load_dotenv()
-
 logger1 = logging.getLogger('logger1')
 logger1.setLevel(logging.INFO)
 handler1 = logging.FileHandler('status.log')
@@ -99,7 +96,7 @@ def get_fear_and_greed_historical(api_key, start=1, limit=10):
     
     if response.status_code == 200:
         data = response.json()
-        signal(data) # add signal function here
+        signal(data)
         logger1.info(f"Successfully retrieved Fear and Greed Index.")
         return data
     else:
@@ -142,15 +139,14 @@ def get_crypto_listings(api_key, start=1, limit=100, price_min=None, price_max=N
         'aux': aux
     }
     
-    # Remove None values from params
     params = {k: v for k, v in params.items() if v is not None}
     
     response = requests.get(url, headers=headers, params=params)
     
     if response.status_code == 200:
         data = response.json()
-        signal_track_supply_by_tags(data, 'world-liberty-financial-portfolio') # change the tag here
-        signal_track_supply_by_tags(data, 'real-world-assets') # change the tag here
+        signal_track_supply_by_tags(data, 'world-liberty-financial-portfolio')
+        signal_track_supply_by_tags(data, 'real-world-assets')
         logger1.info(f"Successfully retrieved crypto listings.")
         return data
     else:
@@ -175,21 +171,20 @@ def signal(data):
     extreme_greed = mp.get('Extreme Greed', 0)
 
     if fear + extreme_fear > 0.5:
-        logger2.info(f"The average of FGI for the last {counter} days is {index_avg}, the market sentiment seems Fear")
+        logger2.info(f"The average of FGI for the last {counter} days is {index_avg:.2f}, the market sentiment seems Fear")
         if extreme_fear > 0.5:
             logger2.info(f"Consider buy in")
             return "Buy"
     elif greed + extreme_greed > 0.5:
-        logger2.info(f"The average of FGI for the last {counter} days is {index_avg}, the market sentiment seems Greed")
+        logger2.info(f"The average of FGI for the last {counter} days is {index_avg:.2f}, the market sentiment seems Greed")
         if extreme_greed > 0.5:
             logger2.info(f"Consider sell out")
             return "Sell"
     else:
-        logger2.info(f"The average of FGI for the last {counter} days is {index_avg}, the market sentiment seems Neutral")
+        logger2.info(f"The average of FGI for the last {counter} days is {index_avg:.2f}, the market sentiment seems Neutral")
         return "Hold"
 
 def signal_track_supply_by_tags(data, tag):
-    # ex 'world-liberty-financial-portfolio' or 'real-world-assets'
     scale = 1_000_000_000
     total_circulating_supply = 0
     total_total_supply = 0
@@ -223,8 +218,7 @@ def signal_ipo(data):
             count_filed += 1
         elif item.get('status', '') == 'withdrawn':
             count_withdrawn += 1
-        # print(f"{item.get('date', '')} - {item.get('name', '')} - {item.get('symbol', '')} - {item.get('status', '')} - {item.get('price', '')}")
-    result = f"In the last 7 days, {count_priced} / {count_filed} IPOs have been priced, {count_withdrawn} have been withdrawn."
+    result = f"In the last 14 days, {count_priced} / {count_filed} IPOs have been priced, {count_withdrawn} have been withdrawn."
     logger2.info(result)
 
     return result
@@ -262,7 +256,7 @@ if __name__ == "__main__":
 
     if FINNHUB_API_KEY:
         client = Client(FINNHUB_API_KEY)
-        start_date = (pd.Timestamp.today().tz_localize('UTC') - timedelta(days=7)).strftime('%Y-%m-%d')
+        start_date = (pd.Timestamp.today().tz_localize('UTC') - timedelta(days=14)).strftime('%Y-%m-%d')
         data = client.get_upcoming_ipo(start_date, today)
         if data:
             signal_ipo(data)
