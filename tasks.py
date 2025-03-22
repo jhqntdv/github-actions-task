@@ -207,20 +207,47 @@ def signal_track_supply_by_tags(data, tag):
     logger2.info(f"Tags: {tag}, Total Circulating Supply (billions): {total_circulating_supply:.2f}, Total Total Supply (billions): {total_total_supply:.2f}, Total Market Cap (billions): {total_market_cap:.2f}")
 
 def signal_ipo(data):
-    count_withdrawn = 0
-    count_priced = 0
-    count_filed = 0
-    for item in data['ipoCalendar']:
-        if item.get('status', '') == 'priced':
-            count_priced += 1
-            count_filed += 1
-        elif item.get('status', '') == 'filed':
-            count_filed += 1
-        elif item.get('status', '') == 'withdrawn':
-            count_withdrawn += 1
-    result = f"In the last 14 days, {count_priced} / {count_filed} IPOs have been priced, {count_withdrawn} have been withdrawn."
-    logger2.info(result)
+    count_withdrawn, count_priced, count_expected, count_filed = 0, 0, 0, 0
+    total_shares_value = 0
+    largest_ipo = {"name": "", "status": "", "totalSharesValue": 0}
+    latest_withdrawn = {"name": "", "date": ""}
+    latest_priced = {"name": "", "date": "", "totalSharesValue": 0}
 
+    for item in data['ipoCalendar']:
+        name = item.get('name', '')
+        totalSharesValue = item.get('totalSharesValue', 0)
+        status = item.get('status', '')
+        date = item.get('date', '')
+
+        if totalSharesValue:
+            total_shares_value += totalSharesValue
+            if totalSharesValue > largest_ipo["totalSharesValue"]:
+                largest_ipo = {"name": name, "status": status, "totalSharesValue": totalSharesValue}
+
+        if status == 'priced':
+            count_priced += 1
+            if not latest_priced["date"] or date > latest_priced["date"]:
+                latest_priced = {"name": name, "date": date, "totalSharesValue": totalSharesValue}
+        elif status == 'filed':
+            count_filed += 1
+        elif status == 'expected':
+            count_expected += 1
+        elif status == 'withdrawn':
+            count_withdrawn += 1
+            if not latest_withdrawn["date"] or date > latest_withdrawn["date"]:
+                latest_withdrawn = {"name": name, "date": date}
+
+    a = (count_priced + count_expected)
+    b = (count_priced + count_expected + count_filed)
+    c = count_priced
+    d = (count_priced + count_expected)
+
+    logger2.info(f"For the last 14 days, {a} / {b} companies filed IPO with price, {c} / {d} IPOs are expected, Total IPOs value: {total_shares_value/1e6:.3f}M")
+    logger2.info(f"Largest IPO: {largest_ipo['name']} with totalSharesValue: {largest_ipo['totalSharesValue']/1e6:.3f}M")
+    logger2.info(f"Latest IPO is {latest_priced['name']} on {latest_priced['date']} with totalSharesValue: {latest_priced['totalSharesValue']/1e6:.3f}M")
+    logger2.info(f"Latest IPO withdrawn: {latest_withdrawn['name']} on {latest_withdrawn['date']}")
+
+    result = (c, d)
     return result
 
 if __name__ == "__main__":
