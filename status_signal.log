@@ -25,3 +25,12 @@
 2025-03-23 23:32:38,027 - INFO - Largest IPO: Titan Acquisition Corp. with totalSharesValue: 276.000M
 2025-03-23 23:32:38,027 - INFO - Latest IPO is Quartzsea Acquisition Corp on 2025-03-18 with totalSharesValue: 72.000M
 2025-03-23 23:32:38,027 - INFO - Latest IPO withdrawn: NUSATRIP Inc on 2025-03-20
+2025-03-24 23:33:46,198 - INFO - world-liberty-financial-portfolio includes: ['USDT', 'ETH', 'USDC', 'TRX', 'LINK', 'WBTC', 'stETH']
+2025-03-24 23:33:46,198 - INFO - Tags: world-liberty-financial-portfolio, Total Circulating Supply (billions): 298.99, Total Total Supply (billions): 301.72, Total Market Cap (billions): 515.63
+2025-03-24 23:33:46,198 - INFO - real-world-assets includes: ['AVAX', 'LINK', 'HBAR', 'VET', 'MKR', 'QNT']
+2025-03-24 23:33:46,198 - INFO - Tags: real-world-assets, Total Circulating Supply (billions): 129.29, Total Total Supply (billions): 137.45, Total Market Cap (billions): 31.13
+2025-03-24 23:33:46,351 - INFO - The average of FGI for the last 90 days is 41.76, the market sentiment seems Neutral
+2025-03-24 23:33:46,603 - INFO - For the last 14 days, 5 / 25 companies filed IPO with price, 5 / 5 IPOs are expected, Total IPOs value: 2218.877M
+2025-03-24 23:33:46,603 - INFO - Largest IPO: Berto Acquisition Corp. with totalSharesValue: 287.500M
+2025-03-24 23:33:46,603 - INFO - Latest IPO is Gesher Acquisition Corp. II on 2025-03-21 with totalSharesValue: 125.000M
+2025-03-24 23:33:46,603 - INFO - Latest IPO withdrawn: NUSATRIP Inc on 2025-03-20
