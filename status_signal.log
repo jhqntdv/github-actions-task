@@ -79,3 +79,12 @@
 2025-03-29 23:31:45,063 - INFO - Largest IPO: Berto Acquisition Corp. with totalSharesValue: 287.500M
 2025-03-29 23:31:45,064 - INFO - Latest IPO is WF Holding Ltd on 2025-03-27 with totalSharesValue: 8.000M
 2025-03-29 23:31:45,064 - INFO - Latest IPO withdrawn: NUSATRIP Inc on 2025-03-20
+2025-03-30 23:33:12,755 - INFO - world-liberty-financial-portfolio includes: ['USDT', 'ETH', 'USDC', 'TRX', 'LINK', 'WBTC', 'stETH']
+2025-03-30 23:33:12,755 - INFO - Tags: world-liberty-financial-portfolio, Total Circulating Supply (billions): 300.15, Total Total Supply (billions): 302.19, Total Market Cap (billions): 479.24
+2025-03-30 23:33:12,755 - INFO - real-world-assets includes: ['LINK', 'AVAX', 'HBAR', 'MKR', 'VET', 'QNT']
+2025-03-30 23:33:12,755 - INFO - Tags: real-world-assets, Total Circulating Supply (billions): 129.29, Total Total Supply (billions): 137.45, Total Market Cap (billions): 27.48
+2025-03-30 23:33:12,922 - INFO - The average of FGI for the last 90 days is 40.12, the market sentiment seems Neutral
+2025-03-30 23:33:12,990 - INFO - For the last 14 days, 10 / 26 companies filed IPO with price, 8 / 10 IPOs are expected, Total IPOs value: 1445.771M
+2025-03-30 23:33:12,990 - INFO - Largest IPO: Berto Acquisition Corp. with totalSharesValue: 287.500M
+2025-03-30 23:33:12,990 - INFO - Latest IPO is WF Holding Ltd on 2025-03-27 with totalSharesValue: 8.000M
+2025-03-30 23:33:12,990 - INFO - Latest IPO withdrawn: NUSATRIP Inc on 2025-03-20
