@@ -106,3 +106,12 @@
 2025-04-01 23:33:39,702 - INFO - Largest IPO: CoreWeave, Inc. with totalSharesValue: 1500.000M
 2025-04-01 23:33:39,702 - INFO - Latest IPO is UY Scuti Acquisition Corp. on 2025-03-31 with totalSharesValue: 50.000M
 2025-04-01 23:33:39,702 - INFO - Latest IPO withdrawn: NUSATRIP Inc on 2025-03-20
+2025-04-02 23:32:31,718 - INFO - world-liberty-financial-portfolio includes: ['USDT', 'ETH', 'USDC', 'TRX', 'LINK', 'WBTC', 'stETH']
+2025-04-02 23:32:31,718 - INFO - Tags: world-liberty-financial-portfolio, Total Circulating Supply (billions): 300.45, Total Total Supply (billions): 304.64, Total Market Cap (billions): 479.40
+2025-04-02 23:32:31,718 - INFO - real-world-assets includes: ['LINK', 'AVAX', 'HBAR', 'MKR', 'VET', 'QNT']
+2025-04-02 23:32:31,718 - INFO - Tags: real-world-assets, Total Circulating Supply (billions): 129.29, Total Total Supply (billions): 137.45, Total Market Cap (billions): 26.48
+2025-04-02 23:32:32,001 - INFO - The average of FGI for the last 90 days is 39.29, the market sentiment seems Fear
+2025-04-02 23:32:32,255 - INFO - For the last 14 days, 18 / 39 companies filed IPO with price, 15 / 18 IPOs are expected, Total IPOs value: 4515.614M
+2025-04-02 23:32:32,255 - INFO - Largest IPO: CoreWeave, Inc. with totalSharesValue: 1500.000M
+2025-04-02 23:32:32,256 - INFO - Latest IPO is Siddhi Acquisition Corp (Cayman Islands) on 2025-04-01 with totalSharesValue: 240.000M
+2025-04-02 23:32:32,256 - INFO - Latest IPO withdrawn: NUSATRIP Inc on 2025-03-20
