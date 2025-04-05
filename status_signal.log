@@ -133,3 +133,12 @@
 2025-04-04 23:32:50,121 - INFO - Largest IPO: CoreWeave, Inc. with totalSharesValue: 1500.000M
 2025-04-04 23:32:50,121 - INFO - Latest IPO is Lianhe Sowell International Group Ltd on 2025-04-03 with totalSharesValue: 8.000M
 2025-04-04 23:32:50,121 - INFO - Latest IPO withdrawn:  on 
+2025-04-05 23:32:51,789 - INFO - world-liberty-financial-portfolio includes: ['USDT', 'ETH', 'USDC', 'TRX', 'LINK', 'WBTC', 'stETH']
+2025-04-05 23:32:51,789 - INFO - Tags: world-liberty-financial-portfolio, Total Circulating Supply (billions): 300.39, Total Total Supply (billions): 304.52, Total Market Cap (billions): 480.38
+2025-04-05 23:32:51,789 - INFO - real-world-assets includes: ['LINK', 'AVAX', 'HBAR', 'MKR', 'VET', 'QNT']
+2025-04-05 23:32:51,789 - INFO - Tags: real-world-assets, Total Circulating Supply (billions): 129.30, Total Total Supply (billions): 137.45, Total Market Cap (billions): 26.42
+2025-04-05 23:32:51,875 - INFO - The average of FGI for the last 90 days is 38.29, the market sentiment seems Fear
+2025-04-05 23:32:52,233 - INFO - For the last 14 days, 18 / 35 companies filed IPO with price, 17 / 18 IPOs are expected, Total IPOs value: 4208.859M
+2025-04-05 23:32:52,233 - INFO - Largest IPO: CoreWeave, Inc. with totalSharesValue: 1500.000M
+2025-04-05 23:32:52,233 - INFO - Latest IPO is Lianhe Sowell International Group Ltd on 2025-04-03 with totalSharesValue: 8.000M
+2025-04-05 23:32:52,233 - INFO - Latest IPO withdrawn:  on 
