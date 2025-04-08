@@ -160,3 +160,12 @@
 2025-04-07 23:34:57,959 - INFO - Largest IPO: CoreWeave, Inc. with totalSharesValue: 1500.000M
 2025-04-07 23:34:57,959 - INFO - Latest IPO is BeLive Holdings on 2025-04-04 with totalSharesValue: 9.800M
 2025-04-07 23:34:57,959 - INFO - Latest IPO withdrawn:  on 
+2025-04-08 23:33:03,300 - INFO - world-liberty-financial-portfolio includes: ['USDT', 'ETH', 'USDC', 'TRX', 'LINK', 'WBTC', 'stETH']
+2025-04-08 23:33:03,301 - INFO - Tags: world-liberty-financial-portfolio, Total Circulating Supply (billions): 300.10, Total Total Supply (billions): 304.12, Total Market Cap (billions): 434.59
+2025-04-08 23:33:03,301 - INFO - real-world-assets includes: ['HBAR', 'LINK', 'AVAX', 'MKR', 'VET', 'QNT']
+2025-04-08 23:33:03,301 - INFO - Tags: real-world-assets, Total Circulating Supply (billions): 129.30, Total Total Supply (billions): 137.45, Total Market Cap (billions): 23.42
+2025-04-08 23:33:03,409 - INFO - The average of FGI for the last 90 days is 37.00, the market sentiment seems Fear
+2025-04-08 23:33:03,677 - INFO - For the last 14 days, 20 / 37 companies filed IPO with price, 18 / 20 IPOs are expected, Total IPOs value: 4559.299M
+2025-04-08 23:33:03,677 - INFO - Largest IPO: CoreWeave, Inc. with totalSharesValue: 1500.000M
+2025-04-08 23:33:03,677 - INFO - Latest IPO is BeLive Holdings on 2025-04-04 with totalSharesValue: 9.800M
+2025-04-08 23:33:03,677 - INFO - Latest IPO withdrawn:  on 
