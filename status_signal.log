@@ -187,3 +187,12 @@
 2025-04-10 23:33:53,773 - INFO - Largest IPO: CoreWeave, Inc. with totalSharesValue: 1500.000M
 2025-04-10 23:33:53,773 - INFO - Latest IPO is Titan Acquisition Corp. on 2025-04-09 with totalSharesValue: 240.000M
 2025-04-10 23:33:53,773 - INFO - Latest IPO withdrawn: Pyro AI Inc. on 2025-04-08
+2025-04-11 23:32:54,457 - INFO - world-liberty-financial-portfolio includes: ['USDT', 'ETH', 'USDC', 'TRX', 'LINK', 'WBTC', 'stETH']
+2025-04-11 23:32:54,457 - INFO - Tags: world-liberty-financial-portfolio, Total Circulating Supply (billions): 300.17, Total Total Supply (billions): 305.03, Total Market Cap (billions): 449.87
+2025-04-11 23:32:54,457 - INFO - real-world-assets includes: ['HBAR', 'AVAX', 'LINK', 'MKR', 'VET', 'QNT']
+2025-04-11 23:32:54,457 - INFO - Tags: real-world-assets, Total Circulating Supply (billions): 129.30, Total Total Supply (billions): 137.45, Total Market Cap (billions): 27.07
+2025-04-11 23:32:54,759 - INFO - The average of FGI for the last 90 days is 36.03, the market sentiment seems Fear
+2025-04-11 23:32:55,064 - INFO - For the last 14 days, 22 / 38 companies filed IPO with price, 22 / 22 IPOs are expected, Total IPOs value: 4563.689M
+2025-04-11 23:32:55,064 - INFO - Largest IPO: CoreWeave, Inc. with totalSharesValue: 1500.000M
+2025-04-11 23:32:55,064 - INFO - Latest IPO is Tianci International, Inc. on 2025-04-10 with totalSharesValue: 7.000M
+2025-04-11 23:32:55,064 - INFO - Latest IPO withdrawn: Pyro AI Inc. on 2025-04-08
