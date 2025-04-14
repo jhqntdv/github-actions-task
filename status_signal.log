@@ -214,3 +214,12 @@
 2025-04-13 23:35:06,990 - INFO - Largest IPO: SmartStop Self Storage REIT, Inc. with totalSharesValue: 810.000M
 2025-04-13 23:35:06,990 - INFO - Latest IPO is Tianci International, Inc. on 2025-04-10 with totalSharesValue: 7.000M
 2025-04-13 23:35:06,990 - INFO - Latest IPO withdrawn: Pyro AI Inc. on 2025-04-08
+2025-04-14 23:33:15,304 - INFO - world-liberty-financial-portfolio includes: ['USDT', 'ETH', 'USDC', 'TRX', 'LINK', 'WBTC', 'stETH']
+2025-04-14 23:33:15,304 - INFO - Tags: world-liberty-financial-portfolio, Total Circulating Supply (billions): 300.29, Total Total Supply (billions): 304.35, Total Market Cap (billions): 458.96
+2025-04-14 23:33:15,304 - INFO - real-world-assets includes: ['AVAX', 'LINK', 'HBAR', 'MKR', 'VET', 'QNT']
+2025-04-14 23:33:15,304 - INFO - Tags: real-world-assets, Total Circulating Supply (billions): 129.30, Total Total Supply (billions): 137.45, Total Market Cap (billions): 27.66
+2025-04-14 23:33:15,416 - INFO - The average of FGI for the last 90 days is 35.33, the market sentiment seems Fear
+2025-04-14 23:33:15,628 - INFO - For the last 14 days, 20 / 34 companies filed IPO with price, 20 / 20 IPOs are expected, Total IPOs value: 3261.276M
+2025-04-14 23:33:15,628 - INFO - Largest IPO: SmartStop Self Storage REIT, Inc. with totalSharesValue: 810.000M
+2025-04-14 23:33:15,628 - INFO - Latest IPO is Tianci International, Inc. on 2025-04-10 with totalSharesValue: 7.000M
+2025-04-14 23:33:15,628 - INFO - Latest IPO withdrawn: Pyro AI Inc. on 2025-04-08
