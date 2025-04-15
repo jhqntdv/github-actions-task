@@ -223,3 +223,12 @@
 2025-04-14 23:33:15,628 - INFO - Largest IPO: SmartStop Self Storage REIT, Inc. with totalSharesValue: 810.000M
 2025-04-14 23:33:15,628 - INFO - Latest IPO is Tianci International, Inc. on 2025-04-10 with totalSharesValue: 7.000M
 2025-04-14 23:33:15,628 - INFO - Latest IPO withdrawn: Pyro AI Inc. on 2025-04-08
+2025-04-15 23:33:36,680 - INFO - world-liberty-financial-portfolio includes: ['USDT', 'ETH', 'USDC', 'TRX', 'LINK', 'WBTC', 'stETH']
+2025-04-15 23:33:36,680 - INFO - Tags: world-liberty-financial-portfolio, Total Circulating Supply (billions): 300.74, Total Total Supply (billions): 304.57, Total Market Cap (billions): 455.22
+2025-04-15 23:33:36,680 - INFO - real-world-assets includes: ['LINK', 'AVAX', 'HBAR', 'MKR', 'VET', 'QNT']
+2025-04-15 23:33:36,680 - INFO - Tags: real-world-assets, Total Circulating Supply (billions): 129.30, Total Total Supply (billions): 137.45, Total Market Cap (billions): 26.51
+2025-04-15 23:33:36,792 - INFO - The average of FGI for the last 90 days is 35.14, the market sentiment seems Fear
+2025-04-15 23:33:37,051 - INFO - For the last 14 days, 19 / 34 companies filed IPO with price, 18 / 19 IPOs are expected, Total IPOs value: 3453.726M
+2025-04-15 23:33:37,051 - INFO - Largest IPO: SmartStop Self Storage REIT, Inc. with totalSharesValue: 810.000M
+2025-04-15 23:33:37,051 - INFO - Latest IPO is Tianci International, Inc. on 2025-04-10 with totalSharesValue: 7.000M
+2025-04-15 23:33:37,051 - INFO - Latest IPO withdrawn: Fast Track Group on 2025-04-14
