@@ -250,3 +250,12 @@
 2025-04-17 23:34:06,824 - INFO - Largest IPO: Chagee Holdings Ltd. with totalSharesValue: 472.824M
 2025-04-17 23:34:06,824 - INFO - Latest IPO is Haoxin Holdings Ltd on 2025-04-15 with totalSharesValue: 7.000M
 2025-04-17 23:34:06,824 - INFO - Latest IPO withdrawn: Fast Track Group on 2025-04-14
+2025-04-18 23:33:43,514 - INFO - world-liberty-financial-portfolio includes: ['USDT', 'USDC', 'ETH', 'TRX', 'LINK', 'WBTC', 'stETH']
+2025-04-18 23:33:43,514 - INFO - Tags: world-liberty-financial-portfolio, Total Circulating Supply (billions): 301.44, Total Total Supply (billions): 305.02, Total Market Cap (billions): 454.16
+2025-04-18 23:33:43,514 - INFO - real-world-assets includes: ['LINK', 'AVAX', 'HBAR', 'VET', 'MKR', 'QNT']
+2025-04-18 23:33:43,514 - INFO - Tags: real-world-assets, Total Circulating Supply (billions): 129.30, Total Total Supply (billions): 137.45, Total Market Cap (billions): 27.01
+2025-04-18 23:33:43,610 - INFO - The average of FGI for the last 90 days is 34.28, the market sentiment seems Fear
+2025-04-18 23:33:43,892 - INFO - For the last 14 days, 13 / 28 companies filed IPO with price, 12 / 13 IPOs are expected, Total IPOs value: 2836.725M
+2025-04-18 23:33:43,892 - INFO - Largest IPO: Chagee Holdings Ltd. with totalSharesValue: 411.152M
+2025-04-18 23:33:43,892 - INFO - Latest IPO is Chagee Holdings Ltd. on 2025-04-17 with totalSharesValue: 411.152M
+2025-04-18 23:33:43,892 - INFO - Latest IPO withdrawn: Fast Track Group on 2025-04-14
