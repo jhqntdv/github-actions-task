@@ -277,3 +277,12 @@
 2025-04-20 23:32:11,006 - INFO - Largest IPO: Chagee Holdings Ltd. with totalSharesValue: 411.152M
 2025-04-20 23:32:11,006 - INFO - Latest IPO is Chagee Holdings Ltd. on 2025-04-17 with totalSharesValue: 411.152M
 2025-04-20 23:32:11,006 - INFO - Latest IPO withdrawn: Fast Track Group on 2025-04-14
+2025-04-21 23:33:28,730 - INFO - world-liberty-financial-portfolio includes: ['USDT', 'ETH', 'USDC', 'TRX', 'LINK', 'WBTC', 'stETH']
+2025-04-21 23:33:28,730 - INFO - Tags: world-liberty-financial-portfolio, Total Circulating Supply (billions): 301.29, Total Total Supply (billions): 305.04, Total Market Cap (billions): 453.73
+2025-04-21 23:33:28,730 - INFO - real-world-assets includes: ['AVAX', 'LINK', 'HBAR', 'VET', 'MKR', 'QNT']
+2025-04-21 23:33:28,730 - INFO - Tags: real-world-assets, Total Circulating Supply (billions): 129.30, Total Total Supply (billions): 137.45, Total Market Cap (billions): 27.92
+2025-04-21 23:33:28,800 - INFO - The average of FGI for the last 90 days is 33.27, the market sentiment seems Fear
+2025-04-21 23:33:28,909 - INFO - For the last 14 days, 12 / 27 companies filed IPO with price, 11 / 12 IPOs are expected, Total IPOs value: 2807.925M
+2025-04-21 23:33:28,909 - INFO - Largest IPO: Chagee Holdings Ltd. with totalSharesValue: 411.152M
+2025-04-21 23:33:28,909 - INFO - Latest IPO is Chagee Holdings Ltd. on 2025-04-17 with totalSharesValue: 411.152M
+2025-04-21 23:33:28,909 - INFO - Latest IPO withdrawn: TV Channels Network Inc. on 2025-04-18
