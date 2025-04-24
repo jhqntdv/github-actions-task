@@ -304,3 +304,12 @@
 2025-04-23 23:33:49,906 - INFO - Largest IPO: Chagee Holdings Ltd. with totalSharesValue: 411.152M
 2025-04-23 23:33:49,906 - INFO - Latest IPO is Pinnacle Food Group Ltd on 2025-04-22 with totalSharesValue: 7.200M
 2025-04-23 23:33:49,906 - INFO - Latest IPO withdrawn: TV Channels Network Inc. on 2025-04-18
+2025-04-24 23:33:18,951 - INFO - world-liberty-financial-portfolio includes: ['USDT', 'ETH', 'USDC', 'TRX', 'LINK', 'WBTC', 'stETH']
+2025-04-24 23:33:18,951 - INFO - Tags: world-liberty-financial-portfolio, Total Circulating Supply (billions): 303.51, Total Total Supply (billions): 306.73, Total Market Cap (billions): 483.24
+2025-04-24 23:33:18,951 - INFO - real-world-assets includes: ['LINK', 'AVAX', 'HBAR', 'VET', 'MKR', 'QNT']
+2025-04-24 23:33:18,951 - INFO - Tags: real-world-assets, Total Circulating Supply (billions): 129.30, Total Total Supply (billions): 137.45, Total Market Cap (billions): 31.60
+2025-04-24 23:33:19,221 - INFO - The average of FGI for the last 90 days is 32.59, the market sentiment seems Fear
+2025-04-24 23:33:19,479 - INFO - For the last 14 days, 16 / 29 companies filed IPO with price, 12 / 16 IPOs are expected, Total IPOs value: 2512.960M
+2025-04-24 23:33:19,479 - INFO - Largest IPO: Chagee Holdings Ltd. with totalSharesValue: 411.152M
+2025-04-24 23:33:19,479 - INFO - Latest IPO is Texas Ventures Acquisition III Corp on 2025-04-23 with totalSharesValue: 200.000M
+2025-04-24 23:33:19,479 - INFO - Latest IPO withdrawn: GenEmbryomics Ltd on 2025-04-23
