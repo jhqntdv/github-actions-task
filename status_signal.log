@@ -322,3 +322,12 @@
 2025-04-25 23:33:16,060 - INFO - Largest IPO: Chagee Holdings Ltd. with totalSharesValue: 411.152M
 2025-04-25 23:33:16,061 - INFO - Latest IPO is New Providence Acquisition Corp. III/Cayman on 2025-04-24 with totalSharesValue: 261.000M
 2025-04-25 23:33:16,061 - INFO - Latest IPO withdrawn: GenEmbryomics Ltd on 2025-04-23
+2025-04-26 23:33:00,457 - INFO - world-liberty-financial-portfolio includes: ['USDT', 'ETH', 'USDC', 'TRX', 'LINK', 'WBTC', 'stETH']
+2025-04-26 23:33:00,457 - INFO - Tags: world-liberty-financial-portfolio, Total Circulating Supply (billions): 305.11, Total Total Supply (billions): 306.84, Total Market Cap (billions): 491.87
+2025-04-26 23:33:00,457 - INFO - real-world-assets includes: ['AVAX', 'LINK', 'HBAR', 'VET', 'MKR', 'QNT']
+2025-04-26 23:33:00,457 - INFO - Tags: real-world-assets, Total Circulating Supply (billions): 129.31, Total Total Supply (billions): 137.45, Total Market Cap (billions): 31.76
+2025-04-26 23:33:00,560 - INFO - The average of FGI for the last 90 days is 32.40, the market sentiment seems Fear
+2025-04-26 23:33:00,635 - INFO - For the last 14 days, 15 / 25 companies filed IPO with price, 8 / 15 IPOs are expected, Total IPOs value: 2596.920M
+2025-04-26 23:33:00,635 - INFO - Largest IPO: Chagee Holdings Ltd. with totalSharesValue: 411.152M
+2025-04-26 23:33:00,635 - INFO - Latest IPO is New Providence Acquisition Corp. III/Cayman on 2025-04-24 with totalSharesValue: 261.000M
+2025-04-26 23:33:00,635 - INFO - Latest IPO withdrawn: GenEmbryomics Ltd on 2025-04-23
