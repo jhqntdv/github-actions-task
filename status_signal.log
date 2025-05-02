@@ -376,3 +376,12 @@
 2025-05-01 23:34:02,400 - INFO - Largest IPO: Chagee Holdings Ltd. with totalSharesValue: 411.152M
 2025-05-01 23:34:02,400 - INFO - Latest IPO is Lakeshore Acquisition III Corp. on 2025-04-30 with totalSharesValue: 60.000M
 2025-05-01 23:34:02,400 - INFO - Latest IPO withdrawn: J-Star Holding Co., Ltd. on 2025-04-29
+2025-05-02 23:33:56,856 - INFO - world-liberty-financial-portfolio includes: ['USDT', 'ETH', 'USDC', 'TRX', 'LINK', 'WBTC', 'stETH']
+2025-05-02 23:33:56,856 - INFO - Tags: world-liberty-financial-portfolio, Total Circulating Supply (billions): 306.14, Total Total Supply (billions): 309.10, Total Market Cap (billions): 495.23
+2025-05-02 23:33:56,856 - INFO - real-world-assets includes: ['LINK', 'AVAX', 'XLM', 'HBAR', 'MKR', 'VET', 'QNT']
+2025-05-02 23:33:56,856 - INFO - Tags: real-world-assets, Total Circulating Supply (billions): 160.24, Total Total Supply (billions): 187.46, Total Market Cap (billions): 39.47
+2025-05-02 23:33:56,942 - INFO - The average of FGI for the last 90 days is 32.26, the market sentiment seems Fear
+2025-05-02 23:33:57,079 - INFO - For the last 14 days, 24 / 37 companies filed IPO with price, 15 / 24 IPOs are expected, Total IPOs value: 4955.507M
+2025-05-02 23:33:57,079 - INFO - Largest IPO: Churchill Capital Corp X/Cayman with totalSharesValue: 345.000M
+2025-05-02 23:33:57,079 - INFO - Latest IPO is Republic Digital Acquisition Co on 2025-05-01 with totalSharesValue: 264.000M
+2025-05-02 23:33:57,079 - INFO - Latest IPO withdrawn: J-Star Holding Co., Ltd. on 2025-04-29
