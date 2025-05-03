@@ -385,3 +385,12 @@
 2025-05-02 23:33:57,079 - INFO - Largest IPO: Churchill Capital Corp X/Cayman with totalSharesValue: 345.000M
 2025-05-02 23:33:57,079 - INFO - Latest IPO is Republic Digital Acquisition Co on 2025-05-01 with totalSharesValue: 264.000M
 2025-05-02 23:33:57,079 - INFO - Latest IPO withdrawn: J-Star Holding Co., Ltd. on 2025-04-29
+2025-05-03 23:32:57,823 - INFO - world-liberty-financial-portfolio includes: ['USDT', 'ETH', 'USDC', 'TRX', 'LINK', 'WBTC', 'stETH']
+2025-05-03 23:32:57,823 - INFO - Tags: world-liberty-financial-portfolio, Total Circulating Supply (billions): 306.41, Total Total Supply (billions): 309.08, Total Market Cap (billions): 494.03
+2025-05-03 23:32:57,823 - INFO - real-world-assets includes: ['LINK', 'AVAX', 'XLM', 'HBAR', 'MKR', 'VET', 'QNT']
+2025-05-03 23:32:57,823 - INFO - Tags: real-world-assets, Total Circulating Supply (billions): 160.24, Total Total Supply (billions): 187.46, Total Market Cap (billions): 38.48
+2025-05-03 23:32:58,093 - INFO - The average of FGI for the last 90 days is 32.31, the market sentiment seems Fear
+2025-05-03 23:32:58,354 - INFO - For the last 14 days, 23 / 35 companies filed IPO with price, 15 / 23 IPOs are expected, Total IPOs value: 4593.507M
+2025-05-03 23:32:58,354 - INFO - Largest IPO: Churchill Capital Corp X/Cayman with totalSharesValue: 345.000M
+2025-05-03 23:32:58,354 - INFO - Latest IPO is Republic Digital Acquisition Co on 2025-05-01 with totalSharesValue: 264.000M
+2025-05-03 23:32:58,354 - INFO - Latest IPO withdrawn: J-Star Holding Co., Ltd. on 2025-04-29
