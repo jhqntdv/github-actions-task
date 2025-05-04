@@ -2,7 +2,7 @@ name: run tasks.py
 
 on:
   schedule:
-    - cron: '30 23 * * *' # Every day at 11:30 PM
+    - cron: '30 23 * * * 1-5' # Every day at 11:30 PM
 
   push:
     branches:
